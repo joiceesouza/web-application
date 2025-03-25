@@ -25,7 +25,7 @@ try:
         fig = px.scatter(car_data,x="model", y="price", title="Gráfico de Dispersão")
         st.write("### Gráfico de Dispersão Gerado")
         st.plotly_chart(fig)
-        
+
 except FileNotFoundError:
     st.error("Erro: Conjunto de dados não encontrado. Verifique se o arquivo 'car_data.csv' está no diretório correto.")
 except Exception as e:
